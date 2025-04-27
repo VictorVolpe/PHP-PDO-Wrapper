@@ -23,8 +23,7 @@ Or simply include `DB.php` manually if you prefer not to use Composer.
 ## Usage
 
 ### 1. Instantiate the Database
-```
-<?php
+```php
 use VictorVolpe\PhpPdoWrapper\DB;
 
 $db = new DB(
@@ -35,40 +34,35 @@ $db = new DB(
 ```
 
 ### 2. Basic Query
-```
-<?php
+```php
 $users = $db->query("SELECT * FROM users WHERE status = :status", [
     'status' => 'active'
 ]);
 ```
 
 ### 3. Fetch a Single Row
-```
-<?php
+```php
 $user = $db->row("SELECT * FROM users WHERE id = :id", [
     'id' => 1
 ]);
 ```
 
 ### 4. Fetch a Single Column
-```
-<?php
+```php
 $emails = $db->column("SELECT email FROM users WHERE status = :status", [
     'status' => 'active'
 ]);
 ```
 
 ### 5. Fetch a Single Value
-```
-<?php
+```php
 $email = $db->single("SELECT email FROM users WHERE id = :id", [
     'id' => 1
 ]);
 ```
 
 ### 6. Insert a New Record
-```
-<?php
+```php
 $newUserId = $db->insert('users', [
     'username' => 'newuser',
     'email' => 'newuser@example.com',
@@ -77,8 +71,7 @@ $newUserId = $db->insert('users', [
 ```
 
 ### 7. Update Existing Records
-```
-<?php
+```php
 $rowsAffected = $db->update('users', [
     'status' => 'inactive'
 ], "last_login < :date", [
@@ -87,16 +80,14 @@ $rowsAffected = $db->update('users', [
 ```
 
 ### 8. Delete Records
-```
-<?php
+```php
 $rowsDeleted = $db->delete('users', "status = :status", [
     'status' => 'inactive'
 ]);
 ```
 
 ### 9. Transactions
-```
-<?php
+```php
 $db->begin();
 
 try {
