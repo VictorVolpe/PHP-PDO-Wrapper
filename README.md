@@ -126,4 +126,4 @@ If a connection error or query exception occurs, a log file will automatically b
 
 ## License
 
-This project is open-sourced under the [MIT License](https://github.com/VictorVolpe/PHP-PDO-Wrapper/blob/main/LICENSE).
+This project is open-sourced under the [MIT License](https://github.com/VictorVolpe/PHP-PDO-Wrapper/blob/master/LICENSE).

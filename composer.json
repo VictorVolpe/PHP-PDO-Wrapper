@@ -1,5 +1,5 @@
 {
-    "name": "VictorVolpe/PHP-PDO-Wrapper",
+    "name": "victorvolpe/php-pdo-wrapper",
     "description": "A modern PDO wrapper for PHP 8.2+, supporting dynamic placeholders and secure database access.",
     "type": "library",
     "keywords": ["php", "pdo", "database", "wrapper", "mysql", "db"],
