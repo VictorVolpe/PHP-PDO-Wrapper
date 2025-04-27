@@ -1,0 +1,25 @@
+{
+    "name": "VictorVolpe/PHP-PDO-Wrapper",
+    "description": "A modern PDO wrapper for PHP 8.2+, supporting dynamic placeholders and secure database access.",
+    "type": "library",
+    "keywords": ["php", "pdo", "database", "wrapper", "mysql", "db"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Victor Volpe",
+            "email": "victor_volpe@bol.com.br"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "VictorVolpe\\PhpPdoWrapper\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2"
+    },
+    "support": {
+        "issues": "https://github.com/VictorVolpe/PHP-PDO-Wrapper/issues",
+        "source": "https://github.com/VictorVolpe/PHP-PDO-Wrapper"
+    }
+}
